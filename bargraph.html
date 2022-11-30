@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bargraph</title>
+    <style type="text/css">
+ body {
+        color: rgb(221, 84, 84);
+        font-family: 'Noto Sans', sans-serif;
+      }
+
+      .bar-graph {
+        position: static;
+        display: block;
+        margin-top: 15%;
+      }
+
+      .bar-graph .bar-chart {
+        border-radius: 10px;
+        background: #f4ff5f;
+        display: table;
+        table-layout: fixed;
+        width: 60%;
+        max-width: 400px;
+        height: 500px;
+        margin: 0 auto;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 2%, rgba(0, 0, 0, 0) 2%);
+        background-size: 100% 50%;
+        background-position: left top;
+
+      }
+
+      .bar-graph .bar-chart li{
+        position: relative;
+        display: table-cell;
+        vertical-align: bottom;
+        height: 500px;
+      }
+
+      .bar-graph .bar-chart span{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 0 1em;
+        display: block;
+        background: #bb74fe;
+        animation: grow 1s ease-in-out;
+      }
+
+      .bar-graph .bar-chart span::before{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        padding: 5px 1em 0;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        content: attr(title);
+        word-wrap: break-word;
+      }
+
+      .bar-title{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-weight: bolder;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+      }
+
+      @keyframes grow{
+        0% { 
+            height: 0px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="bar-graph">
+      <ul class="bar-chart">
+        <li><span style="height:30%" title="30%" class="bar1"></span></li>
+        <li><span style="height:40%" title="40%" class="bar2"></span></li>
+        <li><span style="height:80%" title="80%" class="bar3"></span></li>
+      </ul>
+    </div>
+    <div class="bar-title">Bar Plot</div>
+</body>
+</html>

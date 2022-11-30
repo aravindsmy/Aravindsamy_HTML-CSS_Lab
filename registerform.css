@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body,html{
+    height: 100%;
+}
+body{
+    background-image: url("bgimage.jpg");
+    min-height: 380px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body a{
+    color: #fff;
+}
+
+.register{
+    width: 110%;
+    box-shadow: 30px 20px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 0.5px solid;
+    border-color: #f1f1f19d;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+input[type="text"],input[type="email"],input[type="tel"]{
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1 ;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus {
+    background: #f1f1f19d;
+    outline: none;
+}
+
+form{
+    padding: 25px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p{
+    font-size: medium;
+    font-weight: normal;
+}
+
+button{
+    width: 40%;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    background: #A0BCC2;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    margin: 15px;
+    color: black;
+    font-weight: bolder;
+}
+#reset{
+    margin-left: 0;
+}

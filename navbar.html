@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style type="text/css">
+
+*{
+            box-sizing: border-box;
+            margin: 0;
+            list-style: none;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 80px;
+            background: #f35a76;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+
+        .navBar {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            background: #aaf598;
+            align-items: center;
+        }
+
+        .navBar .nav{
+            width: 70px;
+            height: 50px;
+            align-items: center;
+            position: relative;
+            display: inline-block;
+            margin: 5px;
+            justify-content: center;
+        }
+
+        .navBar .nav-nodropdown{
+            width: 70px;
+            height: 50px;
+            position: relative;
+            margin: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navBar .nav-nodropdown li{
+            border: none;
+            font-size: medium;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        .navBar .nav-nodropdown li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .navBar .nav-nodropdown:hover{
+            background: #a5bb9f;
+        }
+
+        .navBar .nav .nav-content{
+            display: none;
+            position: absolute;
+            background: #fff;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            min-width: 110px;
+        }
+
+        .navBar .nav .nav-content .nav-content-left{
+            text-decoration: none;
+            background: #94B49F;
+            padding: 5px 5px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .navBar .nav .nav-content .nav-content-left li{
+            color: black;
+            margin-bottom: 2px;
+        }
+
+        .navBar .nav .nav-content .nav-content-right{
+            padding: 3px 5px;
+        }
+
+        .navBar .nav .nav-content .nav-content-right li{
+            margin-bottom: 3px;
+        }
+
+        .navBar .nav .nav-content .nav-content-right li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .navBar .nav .nav-content .nav-content-right li a:hover {
+            background: #ddd;
+        }
+
+        .navBar .nav .btn-nav {
+            width: 70px;
+            height: 50px;
+            background: #8ef774;
+            border: none;
+            padding: 5px;
+            font-size: medium;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bolder;
+        }
+
+        .navBar .nav .btn-nav:hover {
+            background: #a5bb9f;
+        }
+
+        .nav:hover .nav-content{
+            display: flex;
+        }
+
+        h4, p{
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Demo of Dropdown</h1>
+    </div>
+    <div class="navBar">
+        <div class="nav-nodropdown">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+            </ul>
+        </div>
+
+        <div class="nav">
+            <button class="btn-nav">Link 2</button>
+            <div class="nav-content">
+
+                <div class="nav-content-left">
+                    <ul>
+                        <li><i class="fa-solid fa-link"></i></li>
+                        <li><i class="fa-solid fa-link"></i></li>
+                        <li><i class="fa-solid fa-link"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav-content-right">
+                    <ul>
+                        <li><a href="#">DD_Link_1</a></li>
+                        <li><a href="#">DD_Link_2</a></li>
+                        <li><a href="#">DD_Link_3</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="nav">
+            <button class="btn-nav">Link 3</button>
+            <div class="nav-content">
+
+                <div class="nav-content-left">
+                    <ul>
+                        <li><i class="fa-solid fa-link"></i></li>
+                        <li><i class="fa-solid fa-link"></i></li>
+                        <li><i class="fa-solid fa-link"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav-content-right">
+                    <ul>
+                        <li><a href="#">DD_Link_1</a></li>
+                        <li><a href="#">DD_Link_2</a></li>
+                        <li><a href="#">DD_Link_3</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <h4>Navigation Menu Bar with Dropdown List</h4>
+    <p>Hover over the Link to see the dropdown menu.</p>
+
+</body>
+</html>
